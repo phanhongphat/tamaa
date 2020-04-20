@@ -1,0 +1,14 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+.next/
+dist/
+build/
+dist.zip
+node_modules/
+npm-debug.log
+out/
+package-lock.json
+yarn.lock
+.DS_Store
+yarn.lock
+.idea/
+.env

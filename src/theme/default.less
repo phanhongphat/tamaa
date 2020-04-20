@@ -1,0 +1,56 @@
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+	box-shadow: none;
+}
+
+table {
+	table-layout: fixed;
+}
+
+td {
+	word-wrap: break-word;
+}
+.ant-table-row:hover {
+	cursor: pointer;
+}
+
+.restaurantAvatarContainer {
+	background-color: #00c68e;
+	border-radius: 100%;
+	position: relative;
+	//width: 50%;
+	cursor: pointer;
+}
+
+.restaurantAvatar {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
+}
+
+.restaurantAvatarUploadIcon {
+	color: #fff;
+	font-size: 40px;
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.restaurantAvatarContainer:hover .restaurantAvatar {
+	opacity: 0.3;
+}
+
+.restaurantAvatarContainer:hover .restaurantAvatarUploadIcon {
+	opacity: 1;
+}
+
+.ant-menu-item.ant-menu-item-selected {
+	margin: 0 !important;
+}

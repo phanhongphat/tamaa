@@ -1,0 +1,39 @@
+{
+	"presets": ["next/babel"],
+	"env": {
+		"development": {
+			"plugins": ["react-intl"]
+		},
+		"production": {
+			"plugins": [
+				[
+					"react-intl",
+					{
+						"messagesDir": "lang/.messages/"
+					}
+				]
+			]
+		}
+	},
+	"plugins": [
+		["@babel/plugin-proposal-decorators", { "legacy": true }],
+		["@babel/plugin-proposal-class-properties", { "loose": true }],
+		[
+			"module-resolver",
+			{
+				"root": ["./"],
+				"alias": {
+					"src": "./src",
+					"routes": "./routes"
+				}
+			}
+		],
+		[
+			"import",
+			{
+				"libraryName": "antd"
+				// "style": true
+			}
+		]
+	]
+}

@@ -1,0 +1,7 @@
+PORT=3000
+
+BRAND=Name
+
+API_URL=http://t-api.kyanon.digital/api
+
+#WEB_URL=http://t-api.kyanon.digital/api
